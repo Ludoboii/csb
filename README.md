@@ -32,7 +32,7 @@ You can get in contact with us by emailing info@csb.center.
 1. Download the CSB binary or the zipfile from the website
 - [http://csb.center](http://csb.center)
 2. Open the downloaded zip file and drag and drop the containing folder ‘CSB’ onto your desktop or where you would like to store the bot.
-3. Download chromedriver from [http://chromedriver.chromium.org/downloads](http://chromedriver.chromium.org/downloads), make sure you download the right version if you are using Mac, Windows or Linux. Place chromedriver in your CSB folder.
+3. Download chromedriver from [http://chromedriver.chromium.org/downloads](http://chromedriver.chromium.org/downloads), make sure you download the right version if you are using Mac, Windows or Linux. Place chromedriver in your CSB folder; if you're using Linux and already have chromedriver in any of your `PATH` directories you don't need to do anything.
 4. Ensure that Google Chrome (or Chromium if you're using Linux) is downloaded and installed on your device. You can download chrome from [https://www.google.com/chrome/](https://www.google.com/chrome/).
 5. If Chrome it not installed into the default location, make a text file named 'chromepath.txt' in the CSB folder with the path to the Chrome executable
 6. If you have downloaded the binary version of CSB, then you are done now with the installation and you can skip to step 9. If you have downloaded the source files then read along.

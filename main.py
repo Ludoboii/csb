@@ -1,5 +1,6 @@
 from PyQt5 import QtWidgets, uic, QtGui, QtCore
 from collections import OrderedDict
+from distutils.spawn import find_executable
 import sys, os, ast, bot, update
 import encrypt as enc
 REGION = ''
@@ -50,7 +51,12 @@ class itemSel(QtWidgets.QMainWindow):
         elif sys.platform == 'darwin':
             service = './chromedriver'
         elif sys.platform == 'linux':
-            service = './chromedriver'
+            # There's no reason to have a copy of chromedriver in the csb directory if it's being
+            # used for multiple projects and it's already in a folder in the $PATH variable
+            if isinstance(find_executable('chromedriver'), str):
+                service = 'chromedriver'
+            else:
+                service = './chromedriver'
         capabilities = {'chrome.binary': chromePath}
 
         QtWidgets.QWidget.__init__(self)
